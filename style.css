@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #222;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+.bart {
+    position: absolute;
+    left: 35em;
+    top: -12em;
+    max-width: 40em;
+    width: auto;
+    height: auto;
+}
+
+.card {
+    position: absolute;
+    /* background: #f5fffed0; */
+    padding: 2em;
+    border-radius: 2em;
+    width: 100%;
+    max-width: 26rem;
+    height: auto;
+}
+
+button {
+    position: absolute;
+    width: 1.8em;
+    height: 1.5em;
+    right: 3em;
+    top: 2.8em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #fff;
+}
+
+.search {
+    max-width: 20em;
+    width: 100%;
+    border:  2px lightgreen inset;
+    outline: none;
+    padding: 0.3em 0.7em;
+    border-radius: 1em;
+    caret-color:rgb(255, 0, 234);
+    font-family: inherit;
+    font-size: 110%;
+}
+
+.city {
+    margin: 0.6em 0;
+    font-size: 2.3em;
+}
+
+.hidden {
+    display: none;
+}
+.temp {
+    margin: 0.5em 0;
+    font-size: 2.8em;
+}
+
+.icon {
+    position: absolute;
+    bottom: 7em;
+    left: 9em;
+}
+
+.description {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.3em;
+}
+
+.rain {
+    position: fixed;
+    min-width: 105vw;
+    min-height: 110vh;
+    /* filter: blur(3px); */
+}
+
+.dress {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    width: 9em;
+    height: 5em;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    background: #ff1e42;
+    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+}
+  
+.dress:hover {
+    background: #c3112d;
+}
+
+@media screen and (max-width: 1400px) {
+    .bart {
+        left: 2em;
+        top: 25em;
+    }
+}

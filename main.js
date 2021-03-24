@@ -47,3 +47,7 @@ document.querySelector('.dress').addEventListener('click', function() {
         document.querySelector('.bart').classList.toggle('hidden')
     }
 })
+
+window.onload = function() {
+    document.querySelector('.rain').src= `video/overcast clouds.mp4`
+}

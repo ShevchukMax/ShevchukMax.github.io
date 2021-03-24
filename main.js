@@ -16,6 +16,7 @@ let weather = {
         const {temp, humidity} = data.main
         const {speed} = data.wind
         const {feels_like} = data.main
+        document.querySelector('.weather').classList.remove('hidden')
         document.querySelector('.rain').src= `video/${description}.mp4`
         document.querySelector('.bart').src= `/wear/${round(temp)}.png`
         document.querySelector('.city').innerText = `Weather in ${name}`
@@ -24,21 +25,26 @@ let weather = {
         document.querySelector('.humidity').innerText = `Humidity: ${humidity}%`
         document.querySelector('.wind').innerText = `Wind speed: ${speed} km/h`
         document.querySelector('.feels').innerText = `Feels like: ${Math.trunc(feels_like)}℃`
+        asd3()
+        setTimeout(asd1,301)
     },
     search: function() {
-        this.fetchWeather(document.querySelector('.search').value.replace(' ', '-'))
-        document.querySelector('.weather').classList.remove('hidden')
+        this.fetchWeather(document.querySelector('.search').value.replace(' ', '-')
         this.fetchWeather(document.querySelector('.search').value = '')
     },
 }
 
 document.querySelector('.button').addEventListener('click', function() {
     weather.search()
+    setTimeout(asd, 301)
+    asd2()
 })
 
 document.querySelector('.search').addEventListener('keydown', function(event) {
     if (event.key == 'Enter') {
         weather.search()
+        setTimeout(asd, 301)
+        asd2()
     }
 })
 
@@ -48,6 +54,18 @@ document.querySelector('.dress').addEventListener('click', function() {
     }
 })
 
-window.onload = function() {
-    document.querySelector('.rain').src= `video/overcast clouds.mp4`
+function asd () {
+    document.querySelector('.invalid').classList.remove('hidden')
+}
+
+function asd1 () {
+    document.querySelector('.invalid').classList.add('hidden')
+}
+
+function asd2 () {
+    document.querySelector('.invalid').classList.remove('visibility')
+}
+
+function asd3 () {
+    document.querySelector('.invalid').classList.add('visibility')
 }

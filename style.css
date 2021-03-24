@@ -117,10 +117,10 @@ button {
 }
 
 @media (max-width: 800px) {
-    rain {
+    .rain {
         height: 1%
     }
-    .button{
+    button{
         top: 3em;
         right: 4em;
     }

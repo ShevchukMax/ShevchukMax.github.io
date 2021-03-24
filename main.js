@@ -29,7 +29,7 @@ let weather = {
         setTimeout(asd1,301)
     },
     search: function() {
-        this.fetchWeather(document.querySelector('.search').value.replace(' ', '-')
+        this.fetchWeather(document.querySelector('.search').value.replace(' ', '-'))
         this.fetchWeather(document.querySelector('.search').value = '')
     },
 }

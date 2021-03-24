@@ -111,15 +111,15 @@ button {
     }
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) { */
     .rain {
         position: fixed;
         min-width: 105vw;
         min-height: 110vh;
     }
-}
+/* } */
 
-@media (max-width: 799px) {
+/* @media (max-width: 799px) {
     .rain {
         display: none;
     }
@@ -128,4 +128,4 @@ button {
         background-size: cover;
     }
 }
-
+ */

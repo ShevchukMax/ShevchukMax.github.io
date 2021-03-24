@@ -83,13 +83,6 @@ button {
     font-size: 1.3em;
 }
 
-.rain {
-    position: fixed;
-    min-width: 105vw;
-    min-height: 110vh;
-    /* filter: blur(3px); */
-}
-
 .dress {
     position: absolute;
     top: 1em;
@@ -118,7 +111,15 @@ button {
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 800px) {
+    .rain {
+        position: fixed;
+        min-width: 105vw;
+        min-height: 110vh;
+    }
+}
+
+@media (max-width: 799px) {
     .rain {
         display: none;
     }
@@ -127,3 +128,4 @@ button {
         background-size: cover;
     }
 }
+

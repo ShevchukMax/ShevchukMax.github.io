@@ -30,7 +30,6 @@ body {
 
 .card {
     position: absolute;
-    /* background: #f5fffed0; */
     padding: 2em;
     border-radius: 2em;
     width: 100%;
@@ -121,7 +120,7 @@ button {
         height: 1%
     }
     button{
-        top: 3em;
-        right: 4em;
+        top: 3.2em;
+        right: 3.8em;
     }
 }

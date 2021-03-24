@@ -117,8 +117,10 @@ button {
 }
 
 @media (max-width: 800px) {
+    rain {
+        height: 1%
+    }
     .button{
-        position: absolute;
         top: 3em;
         right: 4em;
     }

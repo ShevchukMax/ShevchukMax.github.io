@@ -112,7 +112,18 @@ button {
 
 @media screen and (max-width: 1400px) {
     .bart {
-        left: 2em;
-        top: 25em;
+        left: 13em;
+        top: 15em;
+        height: 20em;
+    }
+}
+
+@media (max-width: 767px) {
+    .rain {
+        display: none;
+    }
+    body {
+        background-image: url(https://source.unsplash.com/400x800/?landscape);
+        background-size: cover;
     }
 }

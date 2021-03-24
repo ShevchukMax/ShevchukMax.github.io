@@ -50,6 +50,15 @@ button {
     background: #fff;
 }
 
+.invalid {
+    color:#ff1e42;
+    font-size: 120%;
+    margin-left: 0.5em;
+}
+
+.visibility {
+    visibility: hidden;
+}
 .search {
     max-width: 20em;
     width: 100%;

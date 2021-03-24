@@ -110,14 +110,15 @@ button {
 
 @media (max-width: 1400px) {
     .bart {
-        left: 13em;
-        top: 11em;
+        left: 12em;
+        top: 9em;
         height: 20em;
     }
 }
 
 @media (max-width: 800px) {
     .button{
+        position: absolute;
         top: 3em;
         right: 4em;
     }

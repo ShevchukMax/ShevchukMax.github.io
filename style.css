@@ -13,6 +13,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
 }
+.rain {
+    position: fixed;
+    min-width: 105vw;
+    min-height: 110vh;
+}
 
 .bart {
     position: absolute;
@@ -103,29 +108,17 @@ button {
     background: #c3112d;
 }
 
-@media screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
     .bart {
         left: 13em;
-        top: 15em;
+        top: 11em;
         height: 20em;
     }
 }
 
-/* @media (min-width: 800px) { */
-    .rain {
-        position: fixed;
-        min-width: 105vw;
-        min-height: 110vh;
-    }
-/* } */
-
-/* @media (max-width: 799px) {
-    .rain {
-        display: none;
-    }
-    body {
-        background-image: url(https://source.unsplash.com/400x800/?landscape);
-        background-size: cover;
+@media (max-width: 800px) {
+    .button{
+        top: 3em;
+        right: 4em;
     }
 }
- */

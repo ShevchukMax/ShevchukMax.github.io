@@ -29,8 +29,8 @@ let weather = {
         setTimeout(asd1,301)
     },
     search: function() {
-        this.fetchWeather(document.querySelector('.search').value.replace(' ', '-'))
-        this.fetchWeather(document.querySelector('.search').value = '')
+        this.fetchWeather(spell(document.querySelector('.search').value))
+        document.querySelector('.search').value = ''
     },
 }
 
@@ -53,6 +53,16 @@ document.querySelector('.dress').addEventListener('click', function() {
         document.querySelector('.bart').classList.toggle('hidden')
     }
 })
+
+function spell(qwe) {
+    let arr = qwe.split('')
+    for(let i = 0; i < arr.length;i++) {
+        if(arr[arr.length - 1] === ' ') {
+            arr.pop()
+        }
+    }
+    return arr.join('').replace(' ', '-')
+}
 
 function asd () {
     document.querySelector('.invalid').classList.remove('hidden')
